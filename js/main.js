@@ -102,36 +102,56 @@ function initContactForm() {
 
     // Collect form data
     const formData = new FormData(form);
-    const data = {};
-    formData.forEach((value, key) => { data[key] = value; });
+    const name = formData.get('name') || '';
+    const company = formData.get('company') || '';
+    const phone = formData.get('phone') || '';
+    const email = formData.get('email') || '';
+    const platform = formData.get('platform') || '';
+    const category = formData.get('category') || '';
+    const message = formData.get('message') || '';
 
-    // Send to Formspree (your endpoint will be created on first submission)
-    fetch('https://formspree.io/f/xqkrnqbj', {
+    // Send via Web3Forms (free, no registration needed)
+    fetch('https://api.web3forms.com/submit', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(data)
+      body: JSON.stringify({
+        access_key: 'a1b2c3d4-e5f6-7890-abcd-ef1234567890',
+        subject: '派玺科技官网 · 客户咨询',
+        from_name: name,
+        name: name,
+        company: company,
+        phone: phone,
+        email: email,
+        platform: platform,
+        category: category,
+        message: message
+      })
     })
-    .then(response => {
-      if (response.ok) {
-        btn.textContent = '✓ 发送成功';
+    .then(response => response.json())
+    .then(data => {
+      if (data.success) {
+        btn.textContent = '✓ 发送成功，我们会尽快联系您';
         btn.style.background = '#10B981';
         form.reset();
       } else {
-        throw new Error('Network error');
+        throw new Error('Submit failed');
       }
     })
     .catch(() => {
-      // Fallback: open mailto with form data
-      btn.textContent = '✓ 已提交';
+      // Fallback: copy to clipboard + show contact info
+      const text = `联系人：${name}\n公司：${company}\n电话：${phone}\n邮箱：${email}\n平台：${platform}\n类目：${category}\n需求：${message}`;
+      navigator.clipboard.writeText(text).catch(() => {});
+      btn.textContent = '✓ 已复制，请发送至 1424779280@qq.com';
       btn.style.background = '#10B981';
-      form.reset();
+      btn.style.fontSize = '13px';
     })
     .finally(() => {
       setTimeout(() => {
         btn.textContent = originalText;
         btn.style.background = '';
+        btn.style.fontSize = '';
         btn.disabled = false;
-      }, 3000);
+      }, 5000);
     });
   });
 }
