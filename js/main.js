@@ -115,7 +115,7 @@ function initContactForm() {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
-        access_key: 'a1b2c3d4-e5f6-7890-abcd-ef1234567890',
+        access_key: '2a31561f-8cb6-4525-b9bb-e6e212d4244b',
         subject: '派玺科技官网 · 客户咨询',
         from_name: name,
         name: name,
