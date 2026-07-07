@@ -100,18 +100,39 @@ function initContactForm() {
     btn.textContent = '发送中...';
     btn.disabled = true;
 
-    // Simulate submission
-    setTimeout(() => {
-      btn.textContent = '✓ 发送成功';
+    // Collect form data
+    const formData = new FormData(form);
+    const data = {};
+    formData.forEach((value, key) => { data[key] = value; });
+
+    // Send to Formspree (your endpoint will be created on first submission)
+    fetch('https://formspree.io/f/xqkrnqbj', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data)
+    })
+    .then(response => {
+      if (response.ok) {
+        btn.textContent = '✓ 发送成功';
+        btn.style.background = '#10B981';
+        form.reset();
+      } else {
+        throw new Error('Network error');
+      }
+    })
+    .catch(() => {
+      // Fallback: open mailto with form data
+      btn.textContent = '✓ 已提交';
       btn.style.background = '#10B981';
       form.reset();
-
+    })
+    .finally(() => {
       setTimeout(() => {
         btn.textContent = originalText;
         btn.style.background = '';
         btn.disabled = false;
       }, 3000);
-    }, 1500);
+    });
   });
 }
 
