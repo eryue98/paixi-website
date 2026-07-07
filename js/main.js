@@ -140,6 +140,34 @@ function initCaseFilter() {
   });
 }
 
+/* --- Lightbox --- */
+function openLightbox(src) {
+  const existing = document.querySelector('.lightbox-overlay');
+  if (existing) existing.remove();
+
+  const overlay = document.createElement('div');
+  overlay.className = 'lightbox-overlay';
+  overlay.innerHTML = `
+    <span class="lightbox-close">&times;</span>
+    <img src="${src}" class="lightbox-img" />
+  `;
+
+  overlay.addEventListener('click', function(e) {
+    if (e.target === overlay || e.target.classList.contains('lightbox-close')) {
+      overlay.remove();
+    }
+  });
+
+  document.addEventListener('keydown', function escHandler(e) {
+    if (e.key === 'Escape') {
+      overlay.remove();
+      document.removeEventListener('keydown', escHandler);
+    }
+  });
+
+  document.body.appendChild(overlay);
+}
+
 /* --- Counter Animation --- */
 function animateCounters() {
   const counters = document.querySelectorAll('.stat-number[data-target]');
