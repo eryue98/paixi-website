@@ -3,227 +3,373 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="杭州派玺科技有限公司成功案例 - 天猫/京东/抖音/拼多多多平台运营案例展示">
-  <title>案例展示 - 杭州派玺科技有限公司</title>
+  <meta name="description" content="派玺科技成功案例 - 抖音电商运营真实数据，皮尔卡丹男装、轻奢睡衣、酒水等多品类实战案例">
+  <title>案例展示 — 派玺科技 Paixi Tech</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=DM+Serif+Display:ital@0;1&family=Noto+Sans+SC:wght@400;500;600;700&family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+SC:wght@400;500;700;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/home.css">
 </head>
 <body>
 
-  <header class="header scrolled">
-    <div class="container">
-      <a href="index.html" class="logo">
-        <div class="logo-icon">派</div>
-        派玺科技
-      </a>
-      <nav class="nav">
-        <a href="index.html">首页</a>
+<header class="header">
+  <div class="container">
+    <a href="index.html" class="logo">
+      <div class="logo-mark">派</div>
+      <span>派玺科技<span class="logo-sub">PAIXI TECH</span></span>
+    </a>
+    <nav class="nav">
+      <a href="index.html">首页<span class="nav-en">Home</span></a>
+      <a href="about.html">关于<span class="nav-en">About</span></a>
+      <a href="services.html">服务<span class="nav-en">Services</span></a>
+      <a href="cases.html" class="active">案例<span class="nav-en">Cases</span></a>
+      <a href="contact.html">联系<span class="nav-en">Contact</span></a>
+    </nav>
+    <button class="mobile-menu-btn" aria-label="菜单"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- Page Hero -->
+<section class="page-hero">
+  <div class="container">
+    <h1>成功案例</h1>
+    <p class="section-subtitle">用数据证明实力，每一个案例都是我们专业能力的最佳背书</p>
+  </div>
+</section>
+
+<!-- Cases Grid -->
+<section style="padding:80px 0; background:#000;">
+  <div class="container">
+
+    <div class="cases-showcase">
+
+      <!-- 案例1: 服饰品牌抖音 6月 -->
+      <div class="case-card fade-in" data-tilt onclick="openLightbox('images/case-douyin-jun.png')">
+        <div class="case-img" style="background:#fff;">
+          <img src="images/case-douyin-jun.png" alt="抖音店铺6月数据" style="width:100%;height:100%;object-fit:contain;padding:12px;">
+          <span class="case-platform">抖音 DOUYIN</span>
+        </div>
+        <div class="case-body">
+          <h3>知名服饰品牌 · 抖音店铺运营</h3>
+          <div class="case-en">Apparel Brand — Douyin Store Operations</div>
+          <p>6月GMV达¥256.8万，环比增长6%，成交订单2.88万单，成交人数1.26万。自营直播贡献占比超73%，远超同行顶尖水平。</p>
+          <div class="case-metrics">
+            <div><span class="cm-value">¥256.8万</span><span class="cm-label">月GMV</span></div>
+            <div><span class="cm-value">2.88万</span><span class="cm-label">成交订单</span></div>
+            <div><span class="cm-value">73%</span><span class="cm-label">直播占比</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 案例2: 服饰品牌抖音 5月 -->
+      <div class="case-card fade-in" data-tilt onclick="openLightbox('images/case-douyin-may.png')">
+        <div class="case-img" style="background:#fff;">
+          <img src="images/case-douyin-may.png" alt="抖音店铺5月数据" style="width:100%;height:100%;object-fit:contain;padding:12px;">
+          <span class="case-platform">抖音 DOUYIN</span>
+        </div>
+        <div class="case-body">
+          <h3>知名服饰品牌 · 抖音店铺运营</h3>
+          <div class="case-en">Apparel Brand — Douyin Store Operations</div>
+          <p>5月GMV达¥242.3万，成交订单2.56万单，成交人数1.13万。5月中旬活动期间单日峰值达24万，短视频渠道贡献突出。</p>
+          <div class="case-metrics">
+            <div><span class="cm-value">¥242.3万</span><span class="cm-label">月GMV</span></div>
+            <div><span class="cm-value">2.56万</span><span class="cm-label">成交订单</span></div>
+            <div><span class="cm-value">¥24万</span><span class="cm-label">单日峰值</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 案例3: 皮尔卡丹男装 — 10月 -->
+      <div class="case-card fade-in" data-tilt onclick="openLightbox('images/cases/case-12.jpg')">
+        <div class="case-img" style="background:#111;">
+          <img src="images/cases/case-12.jpg" alt="皮尔卡丹男装10月数据" style="width:100%;height:100%;object-fit:contain;padding:12px;">
+          <span class="case-platform">抖音 DOUYIN</span>
+        </div>
+        <div class="case-body">
+          <h3>皮尔卡丹男装 · 商品卡爆发</h3>
+          <div class="case-en">Pierre Cardin — Product Card Growth</div>
+          <p>10月自营GMV ¥83.7万，商品卡贡献 ¥82万（+397%），图文渠道暴增4175%。从直播依赖成功转型商品卡驱动。</p>
+          <div class="case-metrics">
+            <div><span class="cm-value">¥117万</span><span class="cm-label">月GMV</span></div>
+            <div><span class="cm-value">+397%</span><span class="cm-label">商品卡增长</span></div>
+            <div><span class="cm-value">71%</span><span class="cm-label">自营占比</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 案例2: 皮尔卡丹男装 — 11月 -->
+      <div class="case-card fade-in" data-tilt onclick="openLightbox('images/cases/case-11.jpg')">
+        <div class="case-img" style="background:#111;">
+          <img src="images/cases/case-11.jpg" alt="皮尔卡丹男装11月数据" style="width:100%;height:100%;object-fit:contain;padding:12px;">
+          <span class="case-platform">抖音 DOUYIN</span>
+        </div>
+        <div class="case-body">
+          <h3>皮尔卡丹男装 · 持续增长</h3>
+          <div class="case-en">Pierre Cardin — Sustained Growth</div>
+          <p>11月自营GMV ¥186万（+122%），商品卡 ¥184万（+125%），合作达人渠道暴涨231%，全渠道协同发力。</p>
+          <div class="case-metrics">
+            <div><span class="cm-value">¥298万</span><span class="cm-label">月GMV</span></div>
+            <div><span class="cm-value">+122%</span><span class="cm-label">自营增长</span></div>
+            <div><span class="cm-value">62%</span><span class="cm-label">自营占比</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 案例3: 坚果合作店铺 — 12月 -->
+      <div class="case-card fade-in" data-tilt onclick="openLightbox('images/cases/case-04.jpg')">
+        <div class="case-img" style="background:#111;">
+          <img src="images/cases/case-04.jpg" alt="坚果合作店铺12月数据" style="width:100%;height:100%;object-fit:contain;padding:12px;">
+          <span class="case-platform">抖音 DOUYIN</span>
+        </div>
+        <div class="case-body">
+          <h3>食品店铺 · 商品卡转型标杆</h3>
+          <div class="case-en">Food Store — Product Card Pivot</div>
+          <p>12月自营GMV ¥136万，商品卡占比从10月的21%飙升至62%，成功摆脱直播依赖，实现稳定盈利。</p>
+          <div class="case-metrics">
+            <div><span class="cm-value">¥140万</span><span class="cm-label">月GMV</span></div>
+            <div><span class="cm-value">+168%</span><span class="cm-label">商品卡增长</span></div>
+            <div><span class="cm-value">97%</span><span class="cm-label">自营占比</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 案例4: 坚果合作店铺 — 11月 -->
+      <div class="case-card fade-in" data-tilt onclick="openLightbox('images/cases/case-03.jpg')">
+        <div class="case-img" style="background:#111;">
+          <img src="images/cases/case-03.jpg" alt="坚果合作店铺11月数据" style="width:100%;height:100%;object-fit:contain;padding:12px;">
+          <span class="case-platform">抖音 DOUYIN</span>
+        </div>
+        <div class="case-body">
+          <h3>食品店铺 · 商品卡加速期</h3>
+          <div class="case-en">Food Store — Acceleration Phase</div>
+          <p>11月商品卡 ¥31.7万（+61%），自营占比提升至96%。短视频渠道虽下降但整体GMV结构更健康。</p>
+          <div class="case-metrics">
+            <div><span class="cm-value">¥81万</span><span class="cm-label">月GMV</span></div>
+            <div><span class="cm-value">+61%</span><span class="cm-label">商品卡增长</span></div>
+            <div><span class="cm-value">96%</span><span class="cm-label">自营占比</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 案例5: 坚果合作店铺 — 10月 -->
+      <div class="case-card fade-in" data-tilt onclick="openLightbox('images/cases/case-02.jpg')">
+        <div class="case-img" style="background:#111;">
+          <img src="images/cases/case-02.jpg" alt="坚果合作店铺10月数据" style="width:100%;height:100%;object-fit:contain;padding:12px;">
+          <span class="case-platform">抖音 DOUYIN</span>
+        </div>
+        <div class="case-body">
+          <h3>食品店铺 · 直播驱动期</h3>
+          <div class="case-en">Food Store — Live-Stream Driven</div>
+          <p>10月直播贡献 ¥62.7万占主导，商品卡仅 ¥19.7万。通过运营策略调整，后续月份商品卡占比持续提升。</p>
+          <div class="case-metrics">
+            <div><span class="cm-value">¥93万</span><span class="cm-label">月GMV</span></div>
+            <div><span class="cm-value">68%</span><span class="cm-label">直播占比</span></div>
+            <div><span class="cm-value">92%</span><span class="cm-label">自营占比</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 案例6: 酒水类目 — 11月 -->
+      <div class="case-card fade-in" data-tilt onclick="openLightbox('images/cases/case-08.jpg')">
+        <div class="case-img" style="background:#111;">
+          <img src="images/cases/case-08.jpg" alt="酒水类目11月数据" style="width:100%;height:100%;object-fit:contain;padding:12px;">
+          <span class="case-platform">抖音 DOUYIN</span>
+        </div>
+        <div class="case-body">
+          <h3>酒水类目 · 直播王炸</h3>
+          <div class="case-en">Alcohol — Live Stream Dominance</div>
+          <p>11月直播GMV ¥139万（+63%），商品卡 ¥3.5万。11月初单日峰值超50万，直播仍是酒水类目核心渠道。</p>
+          <div class="case-metrics">
+            <div><span class="cm-value">¥143万</span><span class="cm-label">月GMV</span></div>
+            <div><span class="cm-value">+63%</span><span class="cm-label">直播增长</span></div>
+            <div><span class="cm-value">97%</span><span class="cm-label">直播占比</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 案例7: 酒水类目 — 10月 -->
+      <div class="case-card fade-in" data-tilt onclick="openLightbox('images/cases/case-07.jpg')">
+        <div class="case-img" style="background:#111;">
+          <img src="images/cases/case-07.jpg" alt="酒水类目10月数据" style="width:100%;height:100%;object-fit:contain;padding:12px;">
+          <span class="case-platform">抖音 DOUYIN</span>
+        </div>
+        <div class="case-body">
+          <h3>酒水类目 · 稳定起量</h3>
+          <div class="case-en">Alcohol — Steady Growth</div>
+          <p>10月直播GMV ¥85万，商品卡 ¥3.2万（+206%）。10月底出现明显峰值，为11月爆发奠定基础。</p>
+          <div class="case-metrics">
+            <div><span class="cm-value">¥90万</span><span class="cm-label">月GMV</span></div>
+            <div><span class="cm-value">+206%</span><span class="cm-label">商品卡增长</span></div>
+            <div><span class="cm-value">95%</span><span class="cm-label">直播占比</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 案例8: 商品卡流量分析 — 3月 -->
+      <div class="case-card fade-in" data-tilt onclick="openLightbox('images/cases/case-05.jpg')">
+        <div class="case-img" style="background:#111;">
+          <img src="images/cases/case-05.jpg" alt="商品卡流量分析3月" style="width:100%;height:100%;object-fit:contain;padding:12px;">
+          <span class="case-platform">抖音 DOUYIN</span>
+        </div>
+        <div class="case-body">
+          <h3>商品卡流量精细化运营</h3>
+          <div class="case-en">Product Card Traffic Optimization</div>
+          <p>3月商品卡流量渠道分析：合作达人、猜你喜欢、搜索为三大核心渠道，短视频溢出转化暴涨216%。</p>
+          <div class="case-metrics">
+            <div><span class="cm-value">+216%</span><span class="cm-label">溢出转化增长</span></div>
+            <div><span class="cm-value">+205%</span><span class="cm-label">成交增长</span></div>
+            <div><span class="cm-value">+170%</span><span class="cm-label">转化率增长</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 案例9: 轻奢睡衣直播 — 12月23日 -->
+      <div class="case-card fade-in" data-tilt onclick="openLightbox('images/cases/case-13.jpg')">
+        <div class="case-img" style="background:#111;">
+          <img src="images/cases/case-13.jpg" alt="轻奢睡衣直播数据" style="width:100%;height:100%;object-fit:contain;padding:12px;">
+          <span class="case-platform">抖音 DOUYIN</span>
+        </div>
+        <div class="case-body">
+          <h3>轻奢睡衣 · 高ROI直播</h3>
+          <div class="case-en">Luxury Sleepwear — High ROI Live</div>
+          <p>4小时直播，投放ROI高达31.2，整体ROI 31.2，GPM ¥2,591，平均停留48秒，转化率2.69%。</p>
+          <div class="case-metrics">
+            <div><span class="cm-value">31.2</span><span class="cm-label">整体ROI</span></div>
+            <div><span class="cm-value">¥1.6万</span><span class="cm-label">成交金额</span></div>
+            <div><span class="cm-value">2.69%</span><span class="cm-label">转化率</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 案例10: 轻奢睡衣直播 — 12月24日 -->
+      <div class="case-card fade-in" data-tilt onclick="openLightbox('images/cases/case-01.jpg')">
+        <div class="case-img" style="background:#111;">
+          <img src="images/cases/case-01.jpg" alt="轻奢睡衣直播数据2" style="width:100%;height:100%;object-fit:contain;padding:12px;">
+          <span class="case-platform">抖音 DOUYIN</span>
+        </div>
+        <div class="case-body">
+          <h3>轻奢睡衣 · 持续爆单</h3>
+          <div class="case-en">Luxury Sleepwear — Consistent Performance</div>
+          <p>6小时直播，投放ROI 8.39，整体ROI 28.5，GMV ¥2万，GPM ¥1,735，投放转化率4.7%，CTR 7.16%。</p>
+          <div class="case-metrics">
+            <div><span class="cm-value">28.5</span><span class="cm-label">整体ROI</span></div>
+            <div><span class="cm-value">¥2万</span><span class="cm-label">成交金额</span></div>
+            <div><span class="cm-value">7.16%</span><span class="cm-label">点击率</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 案例11: 商品卡流量分析 — 2月 -->
+      <div class="case-card fade-in" data-tilt onclick="openLightbox('images/cases/case-06.jpg')">
+        <div class="case-img" style="background:#111;">
+          <img src="images/cases/case-06.jpg" alt="商品卡流量分析2月" style="width:100%;height:100%;object-fit:contain;padding:12px;">
+          <span class="case-platform">抖音 DOUYIN</span>
+        </div>
+        <div class="case-body">
+          <h3>商品卡流量 · 搜索优化</h3>
+          <div class="case-en">Product Card — Search Optimization</div>
+          <p>2月搜索渠道为第一大流量来源，曝光1.12万，成交¥1.34万。购后页面点击率39.4%为最高转化渠道。</p>
+          <div class="case-metrics">
+            <div><span class="cm-value">1.12万</span><span class="cm-label">搜索曝光</span></div>
+            <div><span class="cm-value">39.4%</span><span class="cm-label">最高点击率</span></div>
+            <div><span class="cm-value">¥1.34万</span><span class="cm-label">搜索成交</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 案例12: 商品卡交易分析 — 12月 -->
+      <div class="case-card fade-in" data-tilt onclick="openLightbox('images/cases/case-10.jpg')">
+        <div class="case-img" style="background:#111;">
+          <img src="images/cases/case-10.jpg" alt="商品卡交易分析12月" style="width:100%;height:100%;object-fit:contain;padding:12px;">
+          <span class="case-platform">抖音 DOUYIN</span>
+        </div>
+        <div class="case-body">
+          <h3>商品卡交易 · 年末冲刺</h3>
+          <div class="case-en">Product Card — Year-End Surge</div>
+          <p>12月商品卡GMV ¥191万，短视频 ¥32.7万（+405%），图文渠道 ¥67万。自营占比64%，合作占比36%。</p>
+          <div class="case-metrics">
+            <div><span class="cm-value">¥300万</span><span class="cm-label">月GMV</span></div>
+            <div><span class="cm-value">+405%</span><span class="cm-label">短视频增长</span></div>
+            <div><span class="cm-value">64%</span><span class="cm-label">自营占比</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 案例13: 商品卡交易分析 — 3月 -->
+      <div class="case-card fade-in" data-tilt onclick="openLightbox('images/cases/case-09.jpg')">
+        <div class="case-img" style="background:#111;">
+          <img src="images/cases/case-09.jpg" alt="商品卡交易分析3月" style="width:100%;height:100%;object-fit:contain;padding:12px;">
+          <span class="case-platform">抖音 DOUYIN</span>
+        </div>
+        <div class="case-body">
+          <h3>商品卡交易 · 春季复苏</h3>
+          <div class="case-en">Product Card — Spring Recovery</div>
+          <p>3月商品卡GMV ¥42万（+72%），自营占比93%。商品卡为核心渠道，3月下旬出现明显增长峰值。</p>
+          <div class="case-metrics">
+            <div><span class="cm-value">¥47万</span><span class="cm-label">月GMV</span></div>
+            <div><span class="cm-value">+72%</span><span class="cm-label">商品卡增长</span></div>
+            <div><span class="cm-value">93%</span><span class="cm-label">自营占比</span></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="container">
+    <h2 class="fade-in">想让您的品牌成为下一个成功案例？</h2>
+    <p class="fade-in">立即联系我们，获取专属电商运营方案</p>
+    <a href="contact.html" class="btn btn-primary btn-lg fade-in">免费获取方案 →</a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <div class="logo-mark">派</div>
+          <span>派玺科技<span class="logo-sub">PAIXI TECH</span></span>
+        </a>
+        <p>专业电商代运营服务商，为品牌提供抖音、天猫、京东、拼多多等全平台一站式运营解决方案。</p>
+      </div>
+      <div class="footer-col">
+        <h4>快速链接</h4>
         <a href="about.html">关于我们</a>
         <a href="services.html">服务介绍</a>
-        <a href="cases.html" class="active">案例展示</a>
+        <a href="cases.html">案例展示</a>
         <a href="contact.html">联系我们</a>
-      </nav>
-      <button class="mobile-menu-btn" aria-label="菜单">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </header>
-
-  <!-- Page Hero -->
-  <section class="page-hero">
-    <div class="container">
-      <h1>成功案例</h1>
-      <p class="section-subtitle">用数据证明实力，每一个案例都是我们专业能力的最佳背书</p>
-    </div>
-  </section>
-
-  <!-- Cases -->
-  <section style="padding: 80px 0;">
-    <div class="container">
-
-      <!-- Filter -->
-      <div class="cases-filter fade-in">
-        <button class="filter-btn active" data-filter="all">全部案例</button>
-        <button class="filter-btn" data-filter="douyin">抖音</button>
-        <button class="filter-btn" data-filter="tmall">天猫</button>
-        <button class="filter-btn" data-filter="jd">京东</button>
-        <button class="filter-btn" data-filter="pdd">拼多多</button>
       </div>
-
-      <!-- Cases Grid -->
-      <div class="cases-grid">
-
-        <!-- 案例1: 服饰品牌抖音 6月 -->
-        <div class="case-card-full fade-in" data-category="douyin">
-          <div class="case-image" style="background:#fff; display:flex; align-items:center; justify-content:center; overflow:hidden; cursor:pointer;" onclick="openLightbox('images/case-douyin-jun.png')">
-            <img src="images/case-douyin-jun.png" alt="抖音店铺6月数据" style="width:100%; height:100%; object-fit:contain; padding:8px;">
-            <span class="platform-badge">抖音</span>
-          </div>
-          <div class="case-body">
-            <h3>某知名服饰品牌抖音店铺运营</h3>
-            <p>6月GMV达256.8万，环比增长6%，成交订单2.88万单，成交人数1.26万。自营直播贡献占比超73%，远超同行顶尖水平。</p>
-            <div class="case-tags">
-              <span>服饰内衣</span><span>月GMV 256万</span><span>订单2.88万</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- 案例2: 服饰品牌抖音 5月 -->
-        <div class="case-card-full fade-in" data-category="douyin">
-          <div class="case-image" style="background:#fff; display:flex; align-items:center; justify-content:center; overflow:hidden; cursor:pointer;" onclick="openLightbox('images/case-douyin-may.png')">
-            <img src="images/case-douyin-may.png" alt="抖音店铺5月数据" style="width:100%; height:100%; object-fit:contain; padding:8px;">
-            <span class="platform-badge">抖音</span>
-          </div>
-          <div class="case-body">
-            <h3>某知名服饰品牌抖音店铺运营</h3>
-            <p>5月GMV达242.3万，成交订单2.56万单，成交人数1.13万。5月中旬活动期间单日峰值达24万，短视频渠道贡献突出。</p>
-            <div class="case-tags">
-              <span>服饰内衣</span><span>月GMV 242万</span><span>订单2.56万</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- 案例3: 天猫美妆 -->
-        <div class="case-card-full fade-in" data-category="tmall">
-          <div class="case-image" style="background:linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);">
-            <span class="platform-badge">天猫</span>
-          </div>
-          <div class="case-body">
-            <h3>某国际美妆品牌天猫旗舰店代运营</h3>
-            <p>从0到1搭建天猫旗舰店，6个月内实现月销破千万，双11单日GMV突破3000万，稳居类目TOP3。</p>
-            <div class="case-tags">
-              <span>美妆护肤</span><span>国际品牌</span><span>GMV 3000万+</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- 案例4: 京东家电 -->
-        <div class="case-card-full fade-in" data-category="jd">
-          <div class="case-image" style="background:linear-gradient(135deg, #1a1a2e 0%, #2d1b2e 50%, #4a154b 100%);">
-            <span class="platform-badge">京东</span>
-          </div>
-          <div class="case-body">
-            <h3>某知名家电品牌京东自营</h3>
-            <p>接手后3个月GMV增长180%，京东618期间单品销量类目TOP1，全年GMV突破8000万。</p>
-            <div class="case-tags">
-              <span>家电数码</span><span>知名品牌</span><span>GMV增长180%</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- 案例5: 拼多多日用品 -->
-        <div class="case-card-full fade-in" data-category="pdd">
-          <div class="case-image" style="background:linear-gradient(135deg, #1a1a2e 0%, #1e2d1a 50%, #2d4a1e 100%);">
-            <span class="platform-badge">拼多多</span>
-          </div>
-          <div class="case-body">
-            <h3>某日用品品牌拼多多旗舰店</h3>
-            <p>从0起步，利用拼多多社交裂变玩法，6个月GMV突破2000万，单品累计销量50万+件。</p>
-            <div class="case-tags">
-              <span>家居日用</span><span>产业带品牌</span><span>销量50万+</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- 案例6: 天猫母婴 -->
-        <div class="case-card-full fade-in" data-category="tmall">
-          <div class="case-image" style="background:linear-gradient(135deg, #1a1a2e 0%, #2e1a2d 50%, #5c1a4a 100%);">
-            <span class="platform-badge">天猫</span>
-          </div>
-          <div class="case-body">
-            <h3>某高端母婴品牌天猫旗舰店</h3>
-            <p>精细化人群运营+内容营销，客单价提升40%，会员复购率达35%，双11 GMV同比增长260%。</p>
-            <div class="case-tags">
-              <span>母婴用品</span><span>高端品牌</span><span>复购率35%</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- 案例7: 京东宠物 -->
-        <div class="case-card-full fade-in" data-category="jd">
-          <div class="case-image" style="background:linear-gradient(135deg, #1a1a2e 0%, #2d1b2e 50%, #4a154b 100%);">
-            <span class="platform-badge">京东</span>
-          </div>
-          <div class="case-body">
-            <h3>某宠物食品品牌京东POP店</h3>
-            <p>通过精准人群投放+内容种草，6个月GMV增长350%，京东宠物类目新锐品牌TOP5。</p>
-            <div class="case-tags">
-              <span>宠物食品</span><span>新锐品牌</span><span>GMV增长350%</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- 案例8: 拼多多农产品 -->
-        <div class="case-card-full fade-in" data-category="pdd">
-          <div class="case-image" style="background:linear-gradient(135deg, #1a1a2e 0%, #1e2d1a 50%, #2d4a1e 100%);">
-            <span class="platform-badge">拼多多</span>
-          </div>
-          <div class="case-body">
-            <h3>某农产品品牌拼多多旗舰店</h3>
-            <p>产地直播+百亿补贴策略，单月GMV突破800万，拼多多生鲜类目TOP10商家。</p>
-            <div class="case-tags">
-              <span>生鲜农产品</span><span>产地直播</span><span>月GMV 800万</span>
-            </div>
-          </div>
-        </div>
-
+      <div class="footer-col">
+        <h4>服务范围</h4>
+        <a href="services.html">抖音运营</a>
+        <a href="services.html">天猫运营</a>
+        <a href="services.html">京东运营</a>
+        <a href="services.html">拼多多运营</a>
+      </div>
+      <div class="footer-col">
+        <h4>联系方式</h4>
+        <a href="tel:18142864154">18142864154</a>
+        <a href="mailto:1424779280@qq.com">1424779280@qq.com</a>
+        <span>浙江省杭州市滨江区中赢星海A座1002</span>
       </div>
     </div>
-  </section>
-
-  <!-- CTA -->
-  <section class="cta-section">
-    <div class="container">
-      <h2 class="fade-in">想让您的品牌成为下一个成功案例？</h2>
-      <p class="fade-in">立即联系我们，获取专属电商运营方案</p>
-      <a href="contact.html" class="btn btn-primary btn-lg fade-in">免费获取方案</a>
+    <div class="footer-bottom">
+      <span>&copy; 2026 杭州派玺科技有限公司</span>
+      <span>浙ICP备2026XXXXXX号</span>
     </div>
-  </section>
+  </div>
+</footer>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <a href="index.html" class="logo">
-            <div class="logo-icon">派</div>
-            派玺科技
-          </a>
-          <p>专业电商代运营服务商，为品牌提供天猫、京东、抖音、拼多多等全平台一站式运营解决方案。</p>
-        </div>
-        <div class="footer-col">
-          <h4>快速链接</h4>
-          <a href="about.html">关于我们</a>
-          <a href="services.html">服务介绍</a>
-          <a href="cases.html">案例展示</a>
-          <a href="contact.html">联系我们</a>
-        </div>
-        <div class="footer-col">
-          <h4>服务范围</h4>
-          <a href="services.html">天猫运营</a>
-          <a href="services.html">京东运营</a>
-          <a href="services.html">抖音运营</a>
-          <a href="services.html">拼多多运营</a>
-        </div>
-        <div class="footer-col">
-          <h4>联系方式</h4>
-          <a href="tel:18142864154">18142864154</a>
-          <a href="mailto:1424779280@qq.com">1424779280@qq.com</a>
-          <a href="#">浙江省杭州市滨江区中赢星海A座1002</a>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <span>&copy; 2026 杭州派玺科技有限公司. All rights reserved.</span>
-        <span>浙ICP备2026XXXXXX号</span>
-      </div>
-    </div>
-  </footer>
-
-  <script src="js/main.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
