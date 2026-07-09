@@ -319,7 +319,7 @@
   border-color:var(--border2);
 }
 .case-img {
-  height:320px; background:var(--bg-alt);
+  height:320px; background:#F5F3FF;
   position:relative; overflow:hidden;
 }
 .case-img-inner {
